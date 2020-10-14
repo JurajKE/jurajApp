@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox prefHeight="573.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pacholsky.juraj.sportapp.desktop.controllers.PlayerDetailController">
+   <children>
+      <HBox prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: green;">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/other.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-fill: white;" text="JurajApp">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </Text>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitWidth="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: white;">
+                     <image>
+                        <Image url="@img/search-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitWidth="15.0" pickOnBounds="true" preserveRatio="true" style="-: ;">
+                     <image>
+                        <Image url="@img/menu-alt-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: darkgreen;">
+         <children>
+            <Button contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Futbal" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/football-ball-png-image-800.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Hokej" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/unnamed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="55.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Tenis" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/tennis-session-training-usi-weston-8.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="98.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Basketbal" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/basketball-open-letter-3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="293.0" style="-fx-background-color: wgite;">
+         <children>
+            <HBox prefHeight="64.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Unknown-1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Juraj" />
+                              <Text fx:id="surname" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pacholsky">
+                                 <HBox.margin>
+                                    <Insets left="2.0" />
+                                 </HBox.margin></Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Text fx:id="team" fill="#9e9e9e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FC Kosice">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#9e9e9e" strokeType="OUTSIDE" strokeWidth="0.0" text="Vek:">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fx:id="age" fill="#9e9e9e" layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="3.0" top="1.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="57.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Pane>
+                  <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Unknown-2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="1.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox prefHeight="30.0" prefWidth="316.0">
+               <children>
+                  <Button mnemonicParsing="false" style="-fx-background-color: darkgreen;" text="Statistiky" textFill="WHITE" />
+                  <Pane prefHeight="3.0" prefWidth="316.0" style="-fx-background-color: darkgreen;" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </VBox>
+      <ListView fx:id="listViewGoals" prefHeight="180.0" prefWidth="300.0" />
+   </children>
+</VBox>

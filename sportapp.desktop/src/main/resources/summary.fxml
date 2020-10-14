@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox prefHeight="573.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pacholsky.juraj.sportapp.desktop.controllers.SummaryController">
+   <children>
+      <HBox prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: green;">
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/other.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15; -fx-fill: white;" text="JurajApp">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </Text>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" textFill="WHITE">
+               <graphic>
+                  <ImageView fitWidth="15.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: white;">
+                     <image>
+                        <Image url="@img/search-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitWidth="15.0" pickOnBounds="true" preserveRatio="true" style="-: ;">
+                     <image>
+                        <Image url="@img/menu-alt-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: darkgreen;">
+         <children>
+            <Button contentDisplay="TOP" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Futbal" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/football-ball-png-image-800.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Hokej" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/unnamed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="55.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Tenis" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/tennis-session-training-usi-weston-8.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button contentDisplay="TOP" layoutX="98.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Basketbal" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/basketball-open-letter-3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets top="1.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab text="ZAPASY">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: ECECEA;">
+                           <children>
+                              <Button fx:id="buttonPreviousDay" mnemonicParsing="false" onMouseClicked="#refreshDayPrevious" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="10.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/img_348873.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <HBox alignment="CENTER" prefHeight="29.0" prefWidth="254.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/calendar-512.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Text fx:id="dateText" fill="#544f4f" strokeType="OUTSIDE" strokeWidth="0.0" text="18.07 So" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="buttonNextDay" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/img_348873.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding>
+                        </HBox>
+                        <ListView fx:id="listViewMatches" prefHeight="360.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></ListView>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab fx:id="players" text="HRACI">
+               <content>
+                  <HBox>
+                     <children>
+                        <ListView fx:id="listViewPlayers" prefHeight="460.0" prefWidth="298.0" HBox.hgrow="ALWAYS" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" text="Filter By" />
+                              <Button fx:id="filterAll" mnemonicParsing="false" style="-fx-background-color: transparent;" text="All" />
+                              <TextField fx:id="filterPlayerName" promptText="First Name" />
+                              <TextField fx:id="filterSurname" layoutX="10.0" layoutY="37.0" promptText="Surname" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+          </Tab>
+            <Tab text="STADIONY">
+               <content>
+                  <ListView fx:id="listViewStadiums" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="TRENERI">
+               <content>
+                  <ListView fx:id="listViewCoach" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
